@@ -30,12 +30,22 @@
   <div class="field">
     <%= f.label :published %><br />
     <%= f.date_select :published %>
+    
   </div>
   <div class="field">
-    <%= f.label :cd %><br />
-    <%= f.check_box :cd %>
+  <%= radio_button 'gift', 'price' ,"val1" %>
+  <%= radio_button 'gift', 'price' ,"val1" %>
+  <%= radio_button 'gift', 'price' ,"val1" %>
+  <%= radio_button 'gift', 'price' ,"val1" %>
   </div>
+  <div class="field">
+  <%= text_area 'gift', 'name' %>
+  </div>
+    
+  
   <div class="actions">
     <%= f.submit %>
   </div>
+    
+  
 <% end %>
